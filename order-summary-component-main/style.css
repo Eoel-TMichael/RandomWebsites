@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    box-sizing: border-box
+}
+body {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    background-color: hsl(225, 100%, 98%);
+    color: hsl(223, 47%, 23%);
+}
+
+p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    text-align: center;
+    margin: 0;
+}
+
+h4, h2{
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.box > img {
+    width: 100%;
+}
+
+
+.content {
+    margin: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;    
+}
+
+.content > h2 {
+    font-weight: 900;
+    /* text-align: center; */
+}
+
+.content > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: hsl(225, 100%, 98%);
+}
+
+.content > div > div {
+    display: flex;
+}
+
+.content > div > a {
+    color: hsl(245, 75%, 52%);
+}
+
+.content img {
+    margin-right: 15px;
+}
+
+button {
+    display: inline;
+    border-radius: 10px;
+    width: 100%;
+    margin: 0px;
+    padding: 15px;
+    border:none;
+    background: hsl(245, 75%, 52%);
+    font-weight: 900;
+    color: white;
+    box-shadow: 0 0 38px, 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.content > div > a:hover {
+    text-decoration: none;
+    color: hsl(228, 45%, 44%);
+}
+
+button:hover {
+    background-color: hsl(228, 45%, 44%);
+}
+
+.content > a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.content > a:hover {
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
