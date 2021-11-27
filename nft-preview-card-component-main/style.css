@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', san-serif;
+}
+h1 h2 h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.box {
+    background: hsl(216, 50%, 16%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-radius: 15px;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nft-image {
+    display: flex;
+    align-items: center;
+    justify-content:unsafe;
+    position: relative;
+}
+
+
+.nft-image > img:nth-child(odd) {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nft-image > img:nth-child(even) {
+    z-index: -1;
+    position: absolute;
+    left:0;
+    right:0;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.nft-image:hover > div{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color:hsl(178, 100%, 50%, 50%);
+    border-radius: 10px;
+}
+
+.nft-image:hover  img:nth-child(even){
+    z-index: 10;
+}
+
+.box > h2 a {
+    color:hsl(0, 0%, 100%);
+    /* color: hsl(178, 100%, 50%); */
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.box > h2 a:hover {   
+    color: hsl(178, 100%, 50%);
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.price p:nth-child(odd) {
+    align-self: center;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.price span {
+    margin-right: 10px;
+}
+
+.box-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding: 20px 0;
+}
+
+.box-footer img {
+    width: 35px;
+    height: 35px;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.box-footer a {
+    color:hsl(0, 0%, 100%);
+    /* color: hsl(178, 100%, 50%); */
+    text-decoration: none;
+}
+
+
+.box-footer a:hover {   
+    color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 375px) {
+    /* For mobile phones: */
+    .box {
+        width: 90%;
+        margin: 10px;
+    }
+}
